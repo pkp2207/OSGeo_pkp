@@ -14,31 +14,38 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val faculty = findViewById(R.id.projects) as Button
-        faculty.setOnClickListener {
+        val project = findViewById(R.id.projects) as Button
+        project.setOnClickListener {
             val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
             myWebLink.data = Uri.parse("https://www.osgeo.org/projects/")
             startActivity(myWebLink)
         }
 
-        val students = findViewById(R.id.resources) as Button
-        students.setOnClickListener {
+        val res = findViewById(R.id.resources) as Button
+        res.setOnClickListener {
             val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
             myWebLink.data = Uri.parse("https://www.osgeo.org/resources/")
             startActivity(myWebLink)
         }
 
-        val curriculum = findViewById(R.id.initiatives) as Button
-        curriculum.setOnClickListener {
+        val init = findViewById(R.id.initiatives) as Button
+        init.setOnClickListener {
             val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
             myWebLink.data = Uri.parse("https://www.osgeo.org/initiatives/geo-for-all/")
             startActivity(myWebLink)
         }
 
-        val contactus = findViewById(R.id.about) as Button
-        contactus.setOnClickListener {
+        val abt = findViewById(R.id.about) as Button
+        abt.setOnClickListener {
             val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
             myWebLink.data = Uri.parse("https://www.osgeo.org/about/")
+            startActivity(myWebLink)
+        }
+
+        val dev = findViewById(R.id.developer) as Button
+        dev.setOnClickListener {
+            val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
+            myWebLink.data = Uri.parse("https://github.com/pkp2207")
             startActivity(myWebLink)
         }
 

@@ -8,7 +8,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Open soPowerful, secure and flexible; open source gives you the freedom to Do Geo your way."
+            android:text="Powerful, secure and flexible; open source gives you the freedom to Do Geo your way."
             android:layout_above="@+id/OSG_Logo"
             android:textSize="22dp"
             android:textColor="#ffffff"
